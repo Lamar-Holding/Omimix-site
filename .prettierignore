@@ -1,0 +1,14 @@
+node_modules
+.next
+dist
+build
+*.lock
+*.log
+coverage
+__tests__
+.git
+.cache
+.vercel
+.env
+.env.local
+.env.*.local

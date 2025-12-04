@@ -1,0 +1,173 @@
+{
+  "common": {
+    "language": "EN",
+    "home": "Home",
+    "about": "About",
+    "products": "Products",
+    "sectors": "Sectors",
+    "workflow": "Workflow",
+    "certifications": "Certifications",
+    "whyOmimix": "Why Omimix",
+    "contact": "Contact",
+    "language": "Language",
+    "theme": "Theme"
+  },
+  "hero": {
+    "title": "Leaders in Manufacturing Innovative Plastic Additives",
+    "subtitle": "We drive innovation in the sustainable polymer industry to support industrial development and Saudi Vision 2030",
+    "cta": "Contact Us",
+    "learnMore": "Learn More",
+    "location": "Madinah, Kingdom of Saudi Arabia"
+  },
+  "about": {
+    "title": "About Us",
+    "visionTitle": "Our Vision",
+    "vision": "To be the trusted and preferred partner in Saudi Arabia and global markets in providing plastic filler and masterbatch solutions",
+    "missionTitle": "Our Mission",
+    "mission": "Manufacturing high-quality plastic filler (Calcium Carbonate) and color masterbatch to meet diverse market needs with commitment to quality and environment",
+    "backgroundTitle": "Our Background",
+    "background": "We possess strong expertise in additives backed by polymer engineers and experts driving innovation through R&D to produce eco-friendly plastic solutions"
+  },
+  "products": {
+    "title": "Our Products",
+    "filler": {
+      "title": "Plastic Filler",
+      "subtitle": "Omya / Concentrated Calcium Carbonate",
+      "description": "We manufacture high-quality plastic filler based on calcium carbonate, which improves mechanical properties, reduces costs, and enhances processability of final plastic products",
+      "features": [
+        "Improves mechanical properties",
+        "Reduces cost",
+        "Enhances processability",
+        "Various purity grades and particle sizes"
+      ]
+    },
+    "colorMasterbatch": {
+      "title": "Color Masterbatch",
+      "description": "Standard or custom colors for precision coloring of plastic products with high consistency and custom development capabilities",
+      "features": ["Standard or custom colors", "High precision and consistency", "Exact specification matching"]
+    },
+    "whiteMasterbatch": {
+      "title": "White Masterbatch",
+      "description": "Increases opacity of plastic products to improve appearance and visual quality",
+      "features": ["Increases opacity", "Improves appearance", "Consistent high quality"]
+    },
+    "blackMasterbatch": {
+      "title": "Black Masterbatch",
+      "description": "Provides rich and consistent black color with UV resistance properties for superior durability",
+      "features": ["Rich and consistent black color", "UV resistance properties", "Advanced protection features"]
+    },
+    "additiveMasterbatch": {
+      "title": "Additive Masterbatch",
+      "description": "Additives including antioxidants, UV stabilizers, flame retardants, and slip agents to improve polymer performance",
+      "features": ["Antioxidants", "UV stabilizers", "Flame retardants", "Slip agents"]
+    }
+  },
+  "sectors": {
+    "title": "Sectors We Serve",
+    "industrial": {
+      "title": "Industrial Sector",
+      "description": "Our solutions improve performance of industrial plastic components, extending their lifespan and enhancing mechanical properties"
+    },
+    "agricultural": {
+      "title": "Agricultural Sector",
+      "description": "Our products are essential for manufacturing durable agricultural solutions such as irrigation pipes and greenhouse films"
+    },
+    "medical": {
+      "title": "Medical Sector",
+      "description": "We are committed to providing materials that meet strict medical industry standards where precision and purity are critical"
+    },
+    "packaging": {
+      "title": "Packaging",
+      "description": "Our products help produce lightweight, durable, and economical plastic packaging while maintaining visual appeal"
+    },
+    "consumerGoods": {
+      "title": "Consumer Goods",
+      "description": "We help bring vibrant colors and durability to a wide range of consumer products from toys to household items"
+    },
+    "construction": {
+      "title": "Construction & Building",
+      "description": "We contribute high-quality plastic building materials such as pipes and fittings featuring durability and corrosion resistance"
+    }
+  },
+  "workflow": {
+    "title": "Our Workflow",
+    "design": "Design & Development",
+    "designDesc": "Understanding customer needs and developing formulations in labs using cutting-edge technologies",
+    "manufacturing": "Manufacturing",
+    "manufacturingDesc": "Using state-of-the-art production lines and equipment to ensure precision and efficiency",
+    "qc": "Quality Control",
+    "qcDesc": "Comprehensive testing including particle size analysis, density, melting, color analysis, and mechanical properties",
+    "packaging": "Packaging",
+    "packagingDesc": "Careful packaging of products to ensure safety during transport and storage",
+    "logistics": "Logistics & Export",
+    "logisticsDesc": "Efficient logistics network ensuring fast and reliable delivery throughout Saudi Arabia and globally"
+  },
+  "certifications": {
+    "title": "Certifications & Compliance",
+    "fda": {
+      "title": "FDA Standards",
+      "description": "We ensure our food and medical packaging products comply with Saudi Arabia standards and international requirements"
+    },
+    "rohs": {
+      "title": "RoHS Guidelines",
+      "description": "We adhere to guidelines restricting hazardous substances in electrical and electronic equipment"
+    },
+    "reach": {
+      "title": "REACH Regulations",
+      "description": "We ensure compliance with regulations on registration, evaluation, authorization and restriction of chemicals"
+    }
+  },
+  "whyOmimix": {
+    "title": "Why Omimix",
+    "quality": {
+      "title": "Unmatched Quality",
+      "description": "We commit to quality in everything we deliver, using best raw materials and cutting-edge manufacturing techniques"
+    },
+    "flexibility": {
+      "title": "Flexibility",
+      "description": "Ability to adapt and rapidly respond to changing market requirements and specific customer needs"
+    },
+    "sustainability": {
+      "title": "Sustainability",
+      "description": "Developing eco-friendly solutions that contribute to a more sustainable future for our planet"
+    },
+    "innovation": {
+      "title": "Innovation",
+      "description": "Continuous pursuit of developing new products and processes that enhance efficiency and open new horizons"
+    },
+    "reliability": {
+      "title": "Reliability",
+      "description": "Our customers trust us because we commit to on-time delivery and consistent quality backed by strong supply chain"
+    },
+    "techFacilities": {
+      "title": "Advanced Technical Facilities",
+      "description": "Omimix operates modern production facilities and advanced laboratories where R&D teams work on product analysis"
+    }
+  },
+  "contact": {
+    "title": "Contact Us",
+    "description": "At Omimix, we are always ready to answer your inquiries and provide the support you need",
+    "form": {
+      "name": "Name",
+      "email": "Email",
+      "message": "Message",
+      "product": "Select a product or sector",
+      "submit": "Send",
+      "nameRequired": "Name is required",
+      "emailRequired": "Email is required",
+      "emailInvalid": "Email is invalid",
+      "success": "Message sent successfully",
+      "error": "Error sending message"
+    },
+    "address": "Madinah, Kingdom of Saudi Arabia",
+    "email": "Email"
+  },
+  "footer": {
+    "company": "Omimix",
+    "rights": "All rights reserved",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Use",
+    "sitemap": "Sitemap",
+    "followUs": "Follow Us"
+  }
+}

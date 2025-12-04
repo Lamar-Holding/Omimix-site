@@ -1,0 +1,23 @@
+# Allow all crawlers
+User-agent: *
+Allow: /
+
+# Specific rules for search engines
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 0
+
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 1
+
+# Disallow private/admin areas (none in this case)
+Disallow: /admin
+Disallow: /private
+
+# Allow specific paths
+Allow: /public
+Allow: /api/health
+
+# Sitemap location
+Sitemap: https://omimix.sa/sitemap.xml
