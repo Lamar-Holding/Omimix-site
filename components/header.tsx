@@ -3,6 +3,8 @@
 import { useLanguage } from "@/hooks/use-language"
 import { useTheme } from "@/hooks/use-theme"
 import { Menu, Moon, Sun, X } from "lucide-react"
+import Image from "next/image"
+import { useRouter } from "next/navigation"
 import { useEffect, useState } from "react"
 
 interface HeaderProps {
@@ -17,6 +19,7 @@ export function Header({ t, onNavClick }: HeaderProps) {
   const { theme, toggleTheme } = useTheme()
   const [isMenuOpen, setIsMenuOpen] = useState(false)
   const [mounted, setMounted] = useState(false)
+  const router = useRouter()
 
   useEffect(() => {
     setMounted(true)
@@ -29,12 +32,31 @@ export function Header({ t, onNavClick }: HeaderProps) {
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
-          <div className="flex items-center gap-2">
-            <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-primary-light to-secondary flex items-center justify-center text-white font-bold">
-              O
-            </div>
-            <span className="font-bold text-lg text-foreground hidden sm:inline">Omimix</span>
-          </div>
+          <button
+            type="button"
+            onClick={() => window.location.reload()}
+            className="flex items-center gap-3 group w-32 shrink-0"
+            aria-label="Reload page"
+          >
+            <span className="relative block h-10 w-32">
+              <Image
+                src="/Omimix for white mode.png"
+                alt="Omimix logo"
+                fill
+                className="object-contain block dark:hidden"
+                sizes="96px"
+                priority
+              />
+              <Image
+                src="/Omimix for dark mode.png"
+                alt="Omimix logo"
+                fill
+                className="object-contain hidden dark:block"
+                sizes="96px"
+                priority
+              />
+            </span>
+          </button>
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center gap-6 flex-1 justify-center">

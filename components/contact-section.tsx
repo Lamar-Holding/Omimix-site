@@ -239,7 +239,7 @@ export function ContactSection({ t }: ContactSectionProps) {
               <button
                 type="submit"
                 disabled={status === "loading"}
-                className="w-full px-8 py-3 bg-gradient-to-r from-primary-light to-secondary rounded-lg font-semibold text-white hover:shadow-lg hover:shadow-primary-light/30 transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed transform hover:scale-105 hover:disabled:scale-100"
+                className="w-full px-8 py-3 bg-gradient-to-r from-primary-dark to-[var(--color-secondary-accent)] rounded-lg font-semibold text-white shadow-md hover:shadow-xl hover:shadow-primary-light/30 transition-all duration-300 disabled:opacity-60 disabled:cursor-not-allowed transform hover:scale-105 hover:disabled:scale-100"
               >
                 {status === "loading" ? (
                   <span className="flex items-center justify-center gap-2">

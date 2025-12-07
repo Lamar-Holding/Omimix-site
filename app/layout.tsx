@@ -26,10 +26,9 @@ export const metadata: Metadata = {
     alternateLocale: ["en_US"],
   },
   icons: {
-    icon: "/favicon.ico",
+    icon: "/favicon.png",
     apple: "/apple-icon.png",
   },
-    generator: 'v0.app'
 }
 
 export default function RootLayout({

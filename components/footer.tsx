@@ -1,11 +1,15 @@
 "use client"
 
+import Image from "next/image"
+import { useRouter } from "next/navigation"
+
 interface FooterProps {
   t: Record<string, any>
 }
 
 export function Footer({ t }: FooterProps) {
   const currentYear = new Date().getFullYear()
+  const router = useRouter()
 
   return (
     <footer className="bg-background dark:bg-neutral-950 text-foreground py-16 md:py-20 border-t border-border">
@@ -13,17 +17,26 @@ export function Footer({ t }: FooterProps) {
         <div className="grid md:grid-cols-4 gap-12 mb-12">
           {/* Company Info */}
           <div className="space-y-4">
-            <div className="flex items-center gap-2">
-              <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-primary-light to-secondary flex items-center justify-center text-white font-bold">
-                O
-              </div>
-              <span className="font-bold text-lg">Omimix</span>
-            </div>
-            <p className="text-sm text-muted-foreground">
-              {typeof t.footer.company === "string"
-                ? "Leading manufacturer of innovative plastic additives"
-                : t.footer.company}
-            </p>
+            <button
+              onClick={() => router.refresh()}
+              className="relative h-12 w-32"
+              aria-label="Reload page"
+            >
+              <Image
+                src="/Omimix for white mode.png"
+                alt="Omimix logo"
+                fill
+                className="object-contain block dark:hidden"
+                sizes="128px"
+              />
+              <Image
+                src="/Omimix for dark mode.png"
+                alt="Omimix logo"
+                fill
+                className="object-contain hidden dark:block"
+                sizes="128px"
+              />
+            </button>
           </div>
 
           {/* Quick Links */}
