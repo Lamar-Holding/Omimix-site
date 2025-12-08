@@ -247,6 +247,42 @@ html {
   animation: shimmer 3.8s ease-in-out infinite;
 }
 
+@keyframes float-soft {
+  0% {
+    transform: translate3d(0, 0, 0) rotate(0deg);
+  }
+  50% {
+    transform: translate3d(10px, -18px, 0) rotate(3deg);
+  }
+  100% {
+    transform: translate3d(0, 0, 0) rotate(0deg);
+  }
+}
+
+@keyframes float-soft-alt {
+  0% {
+    transform: translate3d(0, 0, 0) rotate(0deg);
+  }
+  50% {
+    transform: translate3d(-14px, 14px, 0) rotate(-4deg);
+  }
+  100% {
+    transform: translate3d(0, 0, 0) rotate(0deg);
+  }
+}
+
+@keyframes drift {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(12px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
 .gradient-primary {
   @apply bg-gradient-to-br from-blue-400 to-cyan-500;
 }
@@ -322,4 +358,49 @@ html {
   background: linear-gradient(180deg, rgba(59, 130, 246, 0), rgba(59, 130, 246, 0.5), rgba(8, 145, 178, 0));
   filter: drop-shadow(0 0 12px rgba(59, 130, 246, 0.35));
   opacity: 0.65;
+}
+
+.orb {
+  position: absolute;
+  border-radius: 9999px;
+  pointer-events: none;
+  opacity: 0.85;
+  mix-blend-mode: screen;
+}
+
+.orb.glass {
+  background: radial-gradient(circle at 30% 30%, rgba(255, 255, 255, 0.6), rgba(59, 130, 246, 0.05));
+  box-shadow: 0 20px 60px rgba(59, 130, 246, 0.15);
+  backdrop-filter: blur(10px);
+}
+
+.orb.accent {
+  background: radial-gradient(circle at 30% 30%, rgba(59, 130, 246, 0.55), rgba(8, 145, 178, 0.24));
+  box-shadow: 0 16px 36px rgba(59, 130, 246, 0.35);
+}
+
+.orb.light {
+  mix-blend-mode: normal;
+  opacity: 0.9;
+  box-shadow: 0 12px 30px rgba(59, 130, 246, 0.22);
+}
+
+.orb.light.accent {
+  background: radial-gradient(circle at 30% 30%, rgba(59, 130, 246, 0.6), rgba(8, 145, 178, 0.32));
+}
+
+.orb.light.glass {
+  background: radial-gradient(circle at 30% 30%, rgba(255, 255, 255, 0.7), rgba(59, 130, 246, 0.12));
+}
+
+.orb.float-a {
+  animation: float-soft 9s ease-in-out infinite alternate;
+}
+
+.orb.float-b {
+  animation: float-soft-alt 10.5s ease-in-out infinite alternate;
+}
+
+.orb.drift {
+  animation: drift 8s ease-in-out infinite alternate;
 }

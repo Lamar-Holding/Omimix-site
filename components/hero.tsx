@@ -1,6 +1,7 @@
 "use client"
 import { ArrowDown } from "lucide-react"
 import Image from "next/image"
+import { useLanguage } from "@/hooks/use-language"
 
 interface HeroProps {
   t: Record<string, any>
@@ -8,16 +9,83 @@ interface HeroProps {
 }
 
 export function Hero({ t, onContactClick }: HeroProps) {
+  const { language } = useLanguage()
+  const isRTL = language === "ar"
+
+  const orbBase = {
+    size1: { width: 64, height: 64 },
+    size2: { width: 88, height: 88 },
+    size3: { width: 56, height: 56 },
+    size4: { width: 48, height: 48 },
+  }
+
+  const orbSide = isRTL
+    ? {
+        primaryTop: { top: "14%", right: "18%" },
+        primaryMid: { top: "8%", right: "12%" },
+        primaryBottom: { bottom: "18%", right: "22%" },
+        primaryBottom2: { bottom: "14%", right: "12%" },
+        light1: { top: "18%", right: "28%" },
+        light2: { bottom: "20%", right: "32%" },
+        extra1: { bottom: "8%", left: "36%" },
+        extra2: { top: "10%", left: "32%" },
+      }
+    : {
+        primaryTop: { top: "14%", left: "14%" },
+        primaryMid: { top: "8%", left: "10%" },
+        primaryBottom: { bottom: "18%", left: "20%" },
+        primaryBottom2: { bottom: "14%", left: "10%" },
+        light1: { top: "18%", left: "24%" },
+        light2: { bottom: "20%", left: "30%" },
+        extra1: { bottom: "8%", right: "36%" },
+        extra2: { top: "10%", right: "32%" },
+      }
+
   return (
     <section id="home" className="relative min-h-[90vh] flex items-center justify-center overflow-hidden pt-20 pb-20">
       {/* Background Gradient */}
       <div className="absolute inset-0 bg-gradient-to-br from-primary-light/10 via-background to-secondary/5 dark:from-primary-dark/20 dark:via-neutral-900 dark:to-secondary/10"></div>
 
       {/* Animated Background Shapes */}
-      <div className="absolute top-20 right-10 w-72 h-72 bg-primary-light/20 rounded-full blur-3xl animate-pulse-glow"></div>
+      <div className="absolute top-10 sm:top-16 right-4 sm:right-12 w-64 h-64 bg-primary-light/14 rounded-full blur-3xl animate-pulse-glow"></div>
       <div
-        className="absolute bottom-20 left-10 w-96 h-96 bg-secondary/10 rounded-full blur-3xl animate-pulse-glow"
+        className="absolute bottom-10 sm:bottom-16 left-4 sm:left-12 w-72 h-72 bg-secondary/10 rounded-full blur-3xl animate-pulse-glow"
         style={{ animationDelay: "1s" }}
+      ></div>
+
+      {/* Floating decorative orbs near text (layout-aware) */}
+      <div
+        className="orb glass float-a"
+        style={{ ...orbBase.size1, ...orbSide.primaryTop }}
+      ></div>
+      <div
+        className="orb accent float-b"
+        style={{ ...orbBase.size2, ...orbSide.primaryMid }}
+      ></div>
+      <div
+        className="orb glass drift"
+        style={{ ...orbBase.size3, ...orbSide.primaryBottom }}
+      ></div>
+      <div
+        className="orb accent float-a"
+        style={{ ...orbBase.size4, ...orbSide.primaryBottom2 }}
+      ></div>
+      {/* Extra orbs shown in all modes to surround text */}
+      <div
+        className="orb accent light float-b"
+        style={{ ...orbBase.size2, ...orbSide.light1 }}
+      ></div>
+      <div
+        className="orb glass light float-a"
+        style={{ ...orbBase.size3, ...orbSide.light2 }}
+      ></div>
+      <div
+        className="orb accent float-b"
+        style={{ width: 80, height: 80, ...orbSide.extra1 }}
+      ></div>
+      <div
+        className="orb glass float-a"
+        style={{ ...orbBase.size3, ...orbSide.extra2 }}
       ></div>
 
       <div className="container mx-auto px-4 relative z-10">
