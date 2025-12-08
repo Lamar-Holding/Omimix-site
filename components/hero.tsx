@@ -29,6 +29,9 @@ export function Hero({ t, onContactClick }: HeroProps) {
         light2: { bottom: "20%", right: "32%" },
         extra1: { bottom: "8%", left: "36%" },
         extra2: { top: "10%", left: "32%" },
+        extra3: { top: "32%", right: "16%" },
+        extra4: { bottom: "30%", right: "18%" },
+        extra5: { top: "46%", right: "28%" },
       }
     : {
         primaryTop: { top: "14%", left: "14%" },
@@ -39,6 +42,9 @@ export function Hero({ t, onContactClick }: HeroProps) {
         light2: { bottom: "20%", left: "30%" },
         extra1: { bottom: "8%", right: "36%" },
         extra2: { top: "10%", right: "32%" },
+        extra3: { top: "32%", left: "12%" },
+        extra4: { bottom: "30%", left: "16%" },
+        extra5: { top: "46%", left: "24%" },
       }
 
   return (
@@ -86,6 +92,18 @@ export function Hero({ t, onContactClick }: HeroProps) {
       <div
         className="orb glass float-a"
         style={{ ...orbBase.size3, ...orbSide.extra2 }}
+      ></div>
+      <div
+        className="orb accent light float-b"
+        style={{ width: 70, height: 70, ...orbSide.extra3 }}
+      ></div>
+      <div
+        className="orb glass light float-a"
+        style={{ width: 60, height: 60, ...orbSide.extra4 }}
+      ></div>
+      <div
+        className="orb accent light float-b"
+        style={{ width: 64, height: 64, ...orbSide.extra5 }}
       ></div>
 
       <div className="container mx-auto px-4 relative z-10">
