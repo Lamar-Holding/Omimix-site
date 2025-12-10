@@ -41,7 +41,7 @@ export function Footer({ t }: FooterProps) {
 
           {/* Quick Links */}
           <div className="space-y-4">
-            <h4 className="font-bold text-foreground">Quick Links</h4>
+            <h4 className="font-bold text-foreground">{t.footer.quickLinks}</h4>
             <ul className="space-y-2 text-sm">
               <li>
                 <a href="#products" className="text-muted-foreground hover:text-primary-light transition-colors">
@@ -80,7 +80,7 @@ export function Footer({ t }: FooterProps) {
 
           {/* Legal */}
           <div className="space-y-4">
-            <h4 className="font-bold text-foreground">Legal</h4>
+            <h4 className="font-bold text-foreground">{t.footer.legal}</h4>
             <ul className="space-y-2 text-sm">
               <li>
                 <a href="#" className="text-muted-foreground hover:text-primary-light transition-colors">

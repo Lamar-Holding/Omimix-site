@@ -72,9 +72,7 @@ export function Products({ t }: ProductsProps) {
                 <p className="text-sm text-muted-foreground mb-6 leading-relaxed">{product.description}</p>
 
                 <div className="space-y-2">
-                  <p className="text-xs font-semibold text-foreground uppercase animate-shimmer">
-                    {typeof product.features[0] === "string" ? "Features" : "المميزات"}
-                  </p>
+                  <p className="text-xs font-semibold text-foreground uppercase animate-shimmer">{t.products.featuresLabel}</p>
                   <ul className="space-y-2">
                     {product.features.map((feature: string, featureIdx: number) => (
                       <li key={featureIdx} className="text-sm text-muted-foreground flex items-start gap-2">
